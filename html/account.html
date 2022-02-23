@@ -1,0 +1,87 @@
+--<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account</title>
+    <link rel="stylesheet" href="../Style/account.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400&family=Vujahday+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <nav class="contanier1" >
+        <h2>O H S</h2> 
+        <label  for="open-menu">&#9776</label>
+        <input type="checkbox" id="open-menu">
+
+
+        <ul>
+            <li> <a href="../html/home.html">Home</a> </li>
+            <li><a href="../html/product.html">Products</a></li>
+            <li><a href="../html/contact.html">Contact</a></li>
+            <li><a href="../html/account.html">Account</a></li>
+           
+        </ul>
+        <a href="../html/account.html" id="icon" ><i class="fa fa-user-o" style="font-size:24px; " ></i ></a>
+    </nav>
+    <div class="account-page">
+        <div class="container">
+            <div class="row">
+                <div class="col-2">
+                    <div class="from-container">
+                        <div class="form-btn">
+                        <span onclick="login()">Login</span>
+                        <span onclick="register()">Register</span>
+                        <hr id="Indicator">
+                    </div>
+                    <form id="LoginForm">
+                        <input type="text" placeholder="Username" id="username-login">
+                        <input type="password"id="password-login" placeholder="Password">
+                        <button type="submit" class="btn" onclick="Loginbtn()"    >Login</button>
+                        <a href="">Forget password</a>
+                    </form> 
+                    <form id="RegForm">
+                        <input type="text" placeholder="Username" id="Username" >
+                        <input type="email" placeholder="Email" id="email" >
+                        <input type="password" placeholder="Password" id="pass-reg">
+                        <button type="submit" class="btn" onclick="Registerbtn()" >Register</button>
+                    </form>
+                 </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer> 
+        <div class="location-div">
+             <h3>Location</h3>
+             <i class="fa fa-map-marker">  Prishtine</i>
+            
+        </div> 
+     <div class="connect-div">
+            <h3>Connect With Us</h3>
+            <div class="Con-icon">
+                <i class="fa fa-facebook-f"></i>
+                <i class="fa fa-google-plus"  ></i>
+                <i class="fa fa-twitter" ></i>
+                <i class="fa fa-linkedin" ></i>
+            </div>
+           
+        </div>
+        <div class="contact-div">
+            <h3>Contact </h3>
+            <i class="	fa fa-phone" >  +0123 456 78910</i>
+            <i class="	fa fa-envelope">  OHS@live.de</i>
+        </div>
+
+        
+     </footer>
+     <div class="line-footer"></div>
+     <div class="copyright-div">
+            © 2021 Copyright:O H S
+    </div>
+    <script src="../js/account.js"></script>
+</body>
+</html>

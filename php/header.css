@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0; 
+}
+.contanier{
+    color: #111;
+    padding: 50px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 1fr;
+    grid-template-areas: "logo menu icon";
+    align-items: center;
+}
+h2{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Vujahday Script', cursive;
+    font-size: 30px;
+    grid-area: logo;
+    text-align: center;
+}
+ul{
+    grid-area: menu;
+    list-style: none;
+    justify-self: center;
+}
+ul li{
+    display: inline-block;
+    margin: 0 17px;
+}
+#icon{
+    grid-area: icon;
+}
+ul li a{
+    color: #111;
+    text-decoration: none;
+    font-size: 17px;
+}
+ul li a:hover{
+    color: rgb(9, 128, 197);
+}
+nav a{
+    justify-self: center;
+} 
+input,label{
+    display:none;
+}

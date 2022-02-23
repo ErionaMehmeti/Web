@@ -1,0 +1,442 @@
+*{
+    margin: 0;
+    padding: 0; 
+}
+.contanier{
+    color: #111;
+    padding: 50px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 1fr;
+    grid-template-areas: "logo menu icon";
+    align-items: center;
+}
+h2{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Vujahday Script', cursive;
+    font-size: 30px;
+    grid-area: logo;
+    text-align: center;
+}
+ul{
+    grid-area: menu;
+    list-style: none;
+    justify-self: center;
+}
+ul li{
+    display: inline-block;
+    margin: 0 17px;
+}
+#icon{
+    grid-area: icon;
+}
+ul li a{
+    color: #111;
+    text-decoration: none;
+    font-size: 17px;
+}
+ul li a:hover{
+    color: rgb(9, 128, 197);
+}
+nav a{
+    justify-self: center;
+} 
+input,label{
+    display:none;
+}
+
+.category{
+    font-size: 20px;
+    text-align: center;
+    margin: 80px ;
+    margin-top: 40px;    
+}
+.category a{
+    text-decoration: none;
+    margin-left: 25px;
+    color:  black;
+
+}
+
+.category a:hover,a.active{
+    background-color: #4488d6;
+    color: #fff;
+}
+.line1{
+    width: 100%;
+    height: 1px;
+    background-color:rgb(218, 213, 213) ;
+    margin-top: -20px;
+}
+.line{
+    width: 200px;
+    height: 1px;
+    background-color: rgb(180, 175, 175);
+    margin-left: 600px;
+    margin-top: -55px;
+}
+.products{
+    display: grid;
+    margin-left: 30px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas:
+    'firstDiv secondDiv thirdDiv '
+    'firstDiv secondDiv thirdDiv '
+    'firstDiv secondDiv thirdDiv '
+    'firstDiv secondDiv thirdDiv ';
+    margin-top:40px;
+}
+.firstItems{
+    grid-area: firstDiv;
+    background-color: #f5f5f5;
+    width: 300px;
+    height: 300px;
+    margin-left: 110px;
+
+}
+.secondItems{
+    grid-area: secondDiv;
+    background-color: #f5f5f5;
+    width: 300px;
+    height: 300px;
+    margin-left: 50px;
+}
+.thirdItems{
+    grid-area: thirdDiv;
+    background-color: #f5f5f5;
+    width: 300px;
+    height: 300px;
+    margin-left: -10px;
+}
+.fourthItems{
+    grid-area: firstDiv;
+    background-color: #f5f5f5;
+    width: 300px;
+    height: 300px;
+    margin-left: 110px;
+    margin-top: 600px;
+}
+.fifthItems{
+    grid-area: secondDiv;
+    background-color: #f5f5f5;
+    width: 300px;
+    height: 300px;
+    margin-left: 50px;
+    margin-top: 600px;
+}
+.sixthItems{
+    grid-area: thirdDiv;
+    background-color: #f5f5f5;
+    width: 300px;
+    height: 300px;
+    margin-left: -10px;
+    margin-top: 600px;
+}
+.seventhItems{
+    grid-area: firstDiv;
+    background-color: #f5f5f5;
+    width: 300px;
+    height: 300px;
+    margin-left: 110px;
+    margin-top: 1200px;
+}
+.eighthItems{
+    grid-area: secondDiv;
+    background-color: #f5f5f5;
+    width: 300px;
+    height: 300px;
+    margin-left: 50px;
+    margin-top: 1200px;
+}
+.ninthItems{
+    grid-area: thirdDiv;
+    background-color: #f5f5f5;
+    width: 300px;
+    height: 300px;
+    margin-left: -10px;
+    margin-top: 1200px;
+}
+.tenthItems{
+    grid-area: firstDiv;
+    background-color: #f5f5f5;
+    width: 300px;
+    height: 300px;
+    margin-left: 110px;
+    margin-top: 1800px;
+}
+.eleventhItems{
+    grid-area: secondDiv;
+    background-color: #f5f5f5;
+    width: 300px;
+    height: 300px;
+    margin-left: 50px;
+    margin-top: 1800px;
+}
+.twelvethItems{
+    grid-area: thirdDiv;
+    background-color: #f5f5f5;
+    width: 300px;
+    height: 300px;
+    margin-left: -10px;
+    margin-top: 1800px;
+}
+.firstItems img{
+    width: 250px;
+    height: 250px;
+    padding: 15px;
+    
+}
+.secondItems img{
+    width: 200px;
+    height: 200px;
+    padding: 40px;
+}
+.thirdItems img{
+    width: 250px;
+    height: 250px;
+    padding: 15px;
+}
+.fourthItems img{
+    width: 200px;
+    height: 200px;
+    padding: 45px;
+}
+.fifthItems img{
+    width: 300px;
+    height: 300px;
+
+}
+.sixthItems img{
+    width: 250px;
+    height: 250px;
+    padding: 20px;
+}
+.seventhItems img{
+    width: 250px;
+    height: 250px;
+    padding: 20px;
+}
+.eighthItems img{
+    width: 250px;
+    height: 250px;
+    padding: 20px;
+}
+.ninthItems img{
+    width: 250px;
+    height: 250px;
+    padding: 20px;
+}
+.tenthItems img{
+    width: 250px;
+    height: 250px;
+    padding: 20px;
+}
+.eleventhItems img{
+    width: 250px;
+    height: 250px;
+    padding: 20px;
+}
+.twelvethItems img{
+    width: 250px;
+    height: 250px;
+    padding: 20px;
+}
+.productName{
+	 font-size: 20px;
+    text-align: center;
+    margin-top: 40px;
+}
+#text{
+    font-size: 20px;
+    text-align: center;
+    margin-top: 15px;
+}
+h5{
+font-size: 20px;
+    text-align: center;
+    margin-top: 30px;
+    display: inline-block;
+    margin-left: 100px;
+}
+ button{
+    margin-left: 15px;
+    width: 50px;
+}
+button:hover{
+	border: 1px solid red;
+    color: red;
+}
+footer{   
+    height: 150px;
+    background-color: #111;
+    color: whitesmoke;
+    margin-top: 220px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "location connect contact";
+    text-align: center;
+    padding-top: 50px;
+}
+.location-div{
+    grid-area: location;
+}
+.fa{
+    padding-top: 20px;
+    color: #717171;
+}
+.connect-div{
+    grid-area: connect;
+}
+
+.contact-div{
+    grid-area: contact;
+}
+.Con-icon{
+    margin-left: -15px;
+}
+ .Con-icon i { 
+    margin-left: 20px;
+}
+.contact-div i{
+    display: block;
+    padding-left:20px;
+}
+.line-footer{
+    width: 100%;
+    height: 1px;
+    background-color:rgb(218, 213, 213) ;
+    position:absolute;
+    margin-top: -25px;
+}
+.copyright-div{
+    background-color: #111;
+    text-align: center;
+    margin-top: -10px;
+    color: whitesmoke;
+}
+@media screen and (max-width:812px){
+    .contanier{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 90px 1fr;
+        grid-template-areas: 
+        "logo hamburger"
+        "menu menu";
+        height: auto;
+
+    }
+    label{
+        display: block;
+        font-size: 30px;
+        justify-self: end;
+    }
+    ul{
+        display: none;
+    }
+    #open-menu:checked +ul{
+        width: 100%;
+        grid-area: menu;
+        justify-content: center;
+        align-items: center;
+        height: calc(100vh - 90px);
+        display: flex;
+        flex-direction: column;
+        
+
+    }
+    #icon{
+       margin-left: 30px;
+       margin-top: -100px;
+    }
+    #open-menu:checked + ul li{
+        display: block;
+        font-size: 30px;
+        margin: 15px 0;
+    }
+    .line{
+        margin-left: 250px;
+    }
+    .products{
+        display: flex;
+        flex-direction: column;
+        margin-top:40px;
+        margin-left: -7px;
+    }
+    
+    .secondItems{  
+        margin-left: 110px;
+        margin-top: 200px;
+    }
+    .thirdItems{
+        margin-left: 110px;
+        margin-top: 200px;
+    }
+    .fourthItems{
+        margin-left: 110px;
+        margin-top: 200px;
+    } 
+    .fifthItems{
+        margin-left: 110px;
+        margin-top: 200px;
+    }
+    
+    .sixthItems{
+        margin-left: 110px;
+        margin-top: 200px;
+    }
+    .seventhItems{
+        margin-left: 110px;
+        margin-top: 200px;
+      }
+    .eighthItems{
+        margin-left: 110px;
+        margin-top: 200px;
+    }
+    .ninthItems{
+        margin-left: 110px;
+        margin-top: 200px;
+    }
+    .tenthItems{
+        margin-left: 110px;
+        margin-top: 200px;
+    }
+    .eleventhItems{
+        margin-left: 110px;
+        margin-top: 200px;
+    }
+    .twelvethItems{
+        margin-left: 110px;
+        margin-top: 200px;
+    } 
+    .line1{
+        width: 100%;
+        height: 1px;
+        background-color:rgb(218, 213, 213) ;
+    }
+    .line{
+        width: 200px;
+        height: 1px;
+        background-color: rgb(180, 175, 175);
+        margin-left: 150px;
+        margin-top: -55px;
+    }
+    footer{
+        margin-top: 50%;
+        height: 550px;
+        background-color: #111;
+        color: whitesmoke;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3,1fr);
+        grid-template-areas: 
+        "location"
+        " connect"
+        " contact";
+        text-align: center;
+    }
+    .category{
+        font-size: 17px;
+    }
+}

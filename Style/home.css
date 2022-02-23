@@ -1,0 +1,324 @@
+*{
+    margin: 0;
+    padding: 0; 
+}
+.contanier{
+    color: #111;
+    padding: 50px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 1fr;
+    grid-template-areas: "logo menu icon";
+    align-items: center;
+}
+h2{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Vujahday Script', cursive;
+    font-size: 30px;
+    grid-area: logo;
+    text-align: center;
+}
+ul{
+    grid-area: menu;
+    list-style: none;
+    justify-self: center;
+}
+ul li{
+    display: inline-block;
+    margin: 0 17px;
+}
+#icon{
+    grid-area: icon;
+}
+ul li a{
+    color: #111;
+    text-decoration: none;
+    font-size: 17px;
+}
+ul li a:hover{
+    color: rgb(9, 128, 197);
+}
+nav a{
+    justify-self: center;
+} 
+input,label{
+    display:none;
+}
+.main-div{
+    background-color: #f7f7f7;
+    height: 580px;
+    margin-top: -20px;
+}
+#image ,#imageHCH{
+   height: 400px;
+    margin-left: 50%;
+    margin-top: -400px;
+}
+#imageHCH{
+    margin-left: 60%;
+}
+.content-div{
+    font-size: 25px;
+    width: 50%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -100px;
+}
+#shopnow{
+    width: 120px;
+    height: 40px;
+    margin-top: 190px;
+    margin-left: -270px;
+    border: none;
+    background-color: red;
+    color: white;
+    border-radius: 7px;
+}
+.slider{
+    margin: auto;
+    position: relative;
+}
+.prev, .next{
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: 90px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    background-color: #aaa9a9;
+}
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+.active, .dot:hover {
+    background-color: #717171;
+  }
+ .main-div {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  @-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+.second-div{
+    margin-top: 30px;
+    margin-left: 5%;
+     margin-right: 5%;
+} 
+  .brand-new{
+      margin-top: 20px;
+      height: 200px;
+      display: grid;
+      grid-template-rows: 1fr;
+      grid-template-columns: repeat(3,1fr);
+      grid-template-areas: 
+      "living kitchen bedroom";
+  }
+  .sofa{
+      width:98% ;
+      height: 70%;
+  }
+.living-room{
+    grid-area: living;
+}
+.kitchen{
+    grid-area: kitchen;
+}
+.bedroom{
+    grid-area: bedroom;
+}
+
+footer{   
+    height: 150px;
+    background-color: #111;
+    color: whitesmoke;
+    margin-top: 150px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "location connect contact";
+    text-align: center;
+    padding-top: 50px;
+}
+.location-div{
+    grid-area: location;
+}
+.fa{
+    padding-top: 20px;
+    color: #717171;
+}
+.connect-div{
+    grid-area: connect;
+}
+
+.contact-div{
+    grid-area: contact;
+}
+.Con-icon{
+    margin-left: -15px;
+}
+ .Con-icon i { 
+    margin-left: 20px;
+}
+.contact-div i{
+    display: block;
+    padding-left:20px;
+}
+.line-footer{
+    width: 100%;
+    height: 1px;
+    background-color:rgb(218, 213, 213) ;
+    position:absolute;
+    margin-top: -25px;
+}
+.copyright-div{
+    background-color: #111;
+    text-align: center;
+    margin-top: -10px;
+    color: whitesmoke;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@media screen and (max-width:812px){
+    .contanier{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 90px 1fr;
+        grid-template-areas: 
+        "logo hamburger"
+        "menu menu";
+        height: auto;
+    }
+    label{
+        display: block;
+        font-size: 30px;
+        justify-self: end;
+    }
+    ul{
+        display: none;
+    }
+    #open-menu:checked +ul{
+        width: 100%;
+        grid-area: menu;
+        justify-content: center;
+        align-items: center;
+        height: calc(100vh - 90px);
+        display: flex;
+        flex-direction: column;
+    }
+    #icon{
+       margin-left: 30px;
+       margin-top: -100px;
+    }
+    #open-menu:checked + ul li{
+        display: block;
+        font-size: 30px;
+        margin: 15px 0;
+    }
+    .main-div{
+        width: 100%;
+        height: 100%;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-areas: 
+        'content'
+        'image';
+    }
+    .content-div{
+        grid-area: content;
+        margin-left: 50px;
+    }
+    .div{
+        margin-top: -160px;
+    }
+    #shopnow{
+        margin-top: 30px;
+    }
+    #image {
+        grid-area: image;
+        margin-left: 20px;
+        margin-top: -100px;
+        width: 375px;
+        
+    }
+    #imageHCH{
+        grid-area: image;
+        margin-left: 100px;
+        margin-top: -100px;
+    } 
+    .next, .prev{
+        margin-top: 200px;
+    }
+    .brand-new{
+         margin-top:20px;
+      height: 700px;
+      display: grid;
+      grid-template-rows: repeat(3,1fr);
+      grid-template-columns: 1fr;
+      grid-template-areas: 
+      "living "
+      "kitchen" 
+      "bedroom";
+    }
+    .living-room{
+        grid-area: living;
+    }
+    .kitchen{
+        grid-area: kitchen; 
+        margin-top: -50px;
+    }
+    .bedroom{
+        grid-area: bedroom;
+        margin-top: -50px;
+
+    }
+    footer{
+        margin-top: 45px;
+        height: 550px;
+        background-color: #111;
+        color: whitesmoke;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3,1fr);
+        grid-template-areas: 
+        "location"
+        " connect"
+        " contact";
+        text-align: center;
+    }
+
+}
