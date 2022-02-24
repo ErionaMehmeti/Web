@@ -41,6 +41,7 @@ class ProductController{
     }
 
     public function update($request, $id){
+        $request['image']='../img/' .$request['image'];
         $query = $this->db->pdo->prepare('UPDATE product  SET product_image = :product_image, product_name = :product_name, product_pershkrim = :product_pershkrim,product_price=:product_price WHERE id = :id');
 
         $query ->bindParam(':product_image',$request['image']);
@@ -56,7 +57,15 @@ class ProductController{
         $query = $this->db->pdo->prepare('DELETE from product WHERE id=:id');
         $query ->bindParam(':id', $id);
         $query ->execute();
-
+        if($query==true){
+            echo "<script> 
+            alert('Produkti eshte fshire me sukses')
+            document.location='ProductDashboard'
+            </script?";
+        }
+        else{
+            return false;
+        }
         return header('Location: ProductDashboard.php');
     }
 }

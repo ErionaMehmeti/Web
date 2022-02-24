@@ -1,9 +1,11 @@
 
 <?php
-require_once ('ProductController.php');
+require_once  ('ProductController.php');
 
+$product =new ProductController();
 if(isset($_GET['id'])) {
-    $ProductId = $_GET['id'];
-    $product->delete($ProductId);
+    $productId = $_GET['id'];
+    $product->delete($productId);
 }
+    
 ?>

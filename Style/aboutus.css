@@ -1,0 +1,196 @@
+*{
+    margin: 0;
+    padding: 0; 
+}
+.contanier{
+    color: #111;
+    padding: 50px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 1fr;
+    grid-template-areas: "logo menu icon";
+    align-items: center;
+}
+h2{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Vujahday Script', cursive;
+    font-size: 30px;
+    grid-area: logo;
+    text-align: center;
+}
+ul{
+    grid-area: menu;
+    list-style: none;
+    justify-self: center;
+}
+ul li{
+    display: inline-block;
+    margin: 0 17px;
+}
+#icon{
+    grid-area: icon;
+}
+ul li a{
+    color: #111;
+    text-decoration: none;
+    font-size: 17px;
+}
+ul li a:hover{
+    color: rgb(9, 128, 197);
+}
+nav a{
+    justify-self: center;
+} 
+input,label{
+    display:none;
+}
+
+
+#livingroom{
+    height: 400px;
+    width: 100%;
+    opacity: 0.5;
+}
+.aboutus{
+    font-size: 30px;
+    text-align: center;
+    margin-top: -15%;
+    position: absolute;
+    margin-left: 45%;
+}
+
+.text-grid{
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "text p";
+}
+.text{
+    margin-top: 40px;
+    margin-left: 50px;
+    grid-area: text;
+}
+hr{
+    width: 100%;
+}
+.lorem-p{
+    grid-area: p;
+    margin-left: -50%;
+}
+.text h3{
+    color: #363838;
+    font-family: "Montserrat", Open Sans;
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 1.5em;
+
+}
+.lorem-p p{
+    color: #A1A1A1;
+    width: auto;
+    margin-top: 20%;
+    
+}
+.company-name,.foto{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "one two three four five six";
+    margin-top: 50px;
+    
+}
+.foto{
+  grid-template-columns: repeat(5,1fr);
+  margin-bottom: -150px;
+       
+}
+.company-name img{
+    width: 200px;
+    height: 200px;
+}
+.one,.first{
+    grid-area: one;
+}
+.two,.second{
+    grid-area: two;
+}
+.three,.third{
+    grid-area: three;
+}
+.four,.fourth{
+    grid-area: four;
+}
+.five,.fivth{
+    grid-area: five;
+}
+.six{
+    grid-area: six;
+}
+.foto img{
+    width:95% ;
+    height: 70%;
+}
+.foto img{
+    transition: 1s;
+
+}
+.foto img{
+    display: block;
+}
+.foto img:hover{
+    transform: scale(1.1);
+    z-index: 1;
+}
+
+footer{   
+    height: 150px;
+    background-color: #111;
+    color: whitesmoke;
+    margin-top: 150px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "location connect contact";
+    text-align: center;
+    padding-top: 50px;
+}
+.location-div{
+    grid-area: location;
+}
+.fa{
+    padding-top: 20px;
+    color: #717171;
+}
+.connect-div{
+    grid-area: connect;
+}
+
+.contact-div{
+    grid-area: contact;
+}
+.Con-icon{
+    margin-left: -15px;
+}
+ .Con-icon i { 
+    margin-left: 20px;
+}
+.contact-div i{
+    display: block;
+    padding-left:20px;
+}
+.line-footer{
+    width: 100%;
+    height: 1px;
+    background-color:rgb(218, 213, 213) ;
+    position:absolute;
+    margin-top: -25px;
+}
+.copyright-div{
+    background-color: #111;
+    text-align: center;
+    margin-top: -10px;
+    color: whitesmoke;
+}

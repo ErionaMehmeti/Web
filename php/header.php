@@ -20,6 +20,8 @@
                 <li><a href="product.php">Products</a></li>
                 <li><a href="contact.php">Contact</a></li>
                 <li><a href="account.php">Account</a></li>
+                <li><a href="aboutus.php">About us</a></li>
+                
                
             </ul>
             <a href="account.php" id="icon" ><i class="	fa fa-user-o" style="font-size:24px; " ></i ></a>
