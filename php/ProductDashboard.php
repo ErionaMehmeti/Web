@@ -60,6 +60,13 @@ button a{
     text-decoration:none;
     color:white;
 }
+td a{
+    text-decoration:none;
+    color:black;
+}
+td a:hover{
+    color:blue;
+}
 </style>
 
 
@@ -91,7 +98,6 @@ button a{
         <td><?php echo $product['product_price'];?></td>
         <td><a href="edit.php?id=<?php echo $product['id'];?>">Edit</a></td>
         <td><a href="delete.php?id=<?php echo $product['id'];?>">Delete</a></td>
-       
     </tr>
     <?php endforeach; ?>
      <button > <a href="create.php?id=<?php echo $product['id'];?>"> Add Products </a> </button>
