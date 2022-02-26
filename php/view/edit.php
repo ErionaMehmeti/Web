@@ -1,5 +1,5 @@
 <?php
-require_once 'ProductController.php';
+require_once '../controller/ProductController.php';
 if(isset($_GET['id'])){
     $ProductId = $_GET['id'];
 }
@@ -16,7 +16,7 @@ if(isset($_POST['submit'])) {
 <div>
     <div class="header">
         <table >
-            <th> Add Product </th>
+            <th>Edit Product</th>
         </table></div>
     <form method="post">
 
@@ -49,7 +49,7 @@ if(isset($_POST['submit'])) {
         height:430px;
     }
     .header{
-        background-color:#009879;
+        background-color:#9bacd0;
         width:250px;
         height: 50px;  
         border:none;

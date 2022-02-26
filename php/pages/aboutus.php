@@ -4,18 +4,27 @@
 <head>
     
     <title>About Us</title>
-    <link rel="stylesheet" href="../Style/aboutus.css">
+    <link rel="stylesheet" href="../../Style/aboutus.css">
+
+    <style>
+        @media screen and (max-width:812px){
+    .aboutus{
+        margin-top:-45%;
+        margin-left:35%;
+    }
+}
+    </style>
 </head>
 <body>
     
 <?php
-    require_once 'header.php';
+    require_once '../view/header.php';
 
 
  ?>
  
  <div class="container">
-        <img id="livingroom"  src="../img/livingroom.webp" alt="">
+        <img id="livingroom"  src="../../img/livingroom.webp" alt="">
 
 
         <h4 class="aboutus" >   About us</h4>
@@ -64,26 +73,26 @@
 
 <div class="foto">
     <div class="first">
-        <img src="../img/1.jpg" alt="">
+        <img src="../../img/1.jpg" alt="">
     </div>
     <div class="second">
-        <img src="../img/2.jpg" alt="">
+        <img src="../../img/2.jpg" alt="">
     </div>
     <div class="third">
-        <img src="../img/3.jpg" alt="">
+        <img src="../../img/3.jpg" alt="">
     </div>
     <div class="fourth">
-        <img src="../img/4.jpg" alt="">
+        <img src="../../img/4.jpg" alt="">
     </div>
     <div class="fivth">
-        <img src="../img/5.jpg" alt="">
+        <img src="../../img/5.jpg" alt="">
     </div>
 </div>
 
 
  
  <?php
-    require_once 'footer.php';
+    require_once '../view/footer.php';
 
 
  ?>

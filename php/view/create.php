@@ -1,5 +1,5 @@
 <?php
-require_once 'ProductController.php';
+require_once '../controller/ProductController.php';
 
 $product = new ProductController;
 if(isset($_POST['submit'])){
@@ -11,7 +11,7 @@ if(isset($_POST['submit'])){
 <div>
     <div class="header">
     <table >
-        <th> Add Product </th>
+        <th> Create Product </th>
     </table></div>
     <form method ="POST">
        
@@ -43,7 +43,7 @@ if(isset($_POST['submit'])){
         height:430px;
     }
     .header{
-        background-color:#009879;
+        background-color:#9bacd0;
         width:250px;
         height: 50px;  
         border:none;

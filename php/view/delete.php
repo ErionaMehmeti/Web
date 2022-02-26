@@ -1,6 +1,6 @@
 
 <?php
-require_once  ('ProductController.php');
+require_once  ('../controller/ProductController.php');
 
 $product =new ProductController();
 if(isset($_GET['id'])) {

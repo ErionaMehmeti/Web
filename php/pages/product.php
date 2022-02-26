@@ -1,5 +1,5 @@
 <?php
-    require_once 'ProductController.php';
+    require_once '../controller/ProductController.php';
  
 ?>
 <style>
@@ -13,7 +13,7 @@
 <head>
     
     <title>Product</title>
-    <link rel="stylesheet" href="../Style/product.css">
+    <link rel="stylesheet" href="../../Style/product.css">
     <link rel="stylesheet" href="product.css">
     <?php include_once("header.php")?>
 </head>
@@ -48,4 +48,4 @@
     </div>     
 
 
-<?php include_once("footer.php")?>
+<?php include_once("../view/footer.php")?>

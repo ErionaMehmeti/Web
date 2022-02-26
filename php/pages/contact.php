@@ -3,7 +3,7 @@
 <head>
    
     <title>Contact Us</title>
-    <link rel="stylesheet" href="../Style/contact.css">
+    <link rel="stylesheet" href="../../Style/contact.css">
 </head>
 <body><?php
     require_once 'header.php';
@@ -31,7 +31,8 @@
    
     
 <?php
-    require_once 'footer.php';
+    require_once '../view/footer.php';
 ?>
+ <script src="../../js/contact.js"></script>
 </body>
 </html>

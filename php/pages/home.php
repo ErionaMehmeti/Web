@@ -3,9 +3,13 @@
 <head>
 
     <title>Document</title>
-     <link rel="stylesheet" href="../Style/home.css">
-    <?php include_once("header.php") ?>
-
+     <link rel="stylesheet" href="../../Style/home.css">
+    <?php include_once("../view/header.php") ?>
+<style>
+    .prev,.next{
+        margin-top:-5%;
+    }
+</style>
 
 </head>
   
@@ -18,7 +22,7 @@
                     </div>
                     <button id="shopnow">Shop Now</button>
                </div> 
-                <img id="image" src="../img/Modern-Furniture-PNG-Picture.png">
+                <img id="image" src="../../img/Modern-Furniture-PNG-Picture.png">
             </div>
         </div>
             <div class="main-div">
@@ -29,7 +33,7 @@
                     </div>
                     <button id="shopnow" >Shop Now</button>
                 </div>
-              <img id="image" src="../img/4-43192_modern-sofa-images-png-transparent-png.png" alt="">
+              <img id="image" src="../../img/4-43192_modern-sofa-images-png-transparent-png.png" alt="">
             </div>
         </div>
             <div class="main-div">
@@ -74,7 +78,7 @@
         </div>
     
 
-    <?php include_once("footer.php")?>
-    <script src="../js/home.js"></script>
+    <?php include_once("../view/footer.php")?>
+    <script src="../../js/home.js"></script>
 
 </html>

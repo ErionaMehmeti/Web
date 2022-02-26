@@ -1,6 +1,6 @@
 *{
     margin: 0;
-    padding: 0; 
+    padding: 0;
 }
 .contanier{
     color: #111;
@@ -11,7 +11,7 @@
     grid-template-areas: "logo menu icon";
     align-items: center;
 }
-h2{
+.contanier h2{
     font-family: 'Source Sans Pro', sans-serif;
     font-family: 'Vujahday Script', cursive;
     font-size: 30px;
@@ -41,7 +41,7 @@ ul li a:hover{
 nav a{
     justify-self: center;
 } 
-input,label{
+nav input,label{
     display:none;
 }
 
@@ -193,4 +193,86 @@ footer{
     text-align: center;
     margin-top: -10px;
     color: whitesmoke;
+}
+@media screen and (max-width:812px){
+    .contanier{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 90px 1fr;
+        grid-template-areas: 
+        "logo hamburger"
+        "menu menu";
+        height: auto;
+       
+    }
+    label{
+        display: block;
+        font-size: 30px;
+        justify-self: end;
+    }
+    ul{
+        display: none;
+    }
+    #open-menu:checked +ul{
+        width: 100%;
+        grid-area: menu;
+        justify-content: center;
+        align-items: center;
+        height: calc(100vh - 90px);
+        display: flex;
+        flex-direction: column;
+    }
+    #icon{
+       margin-left: 30px;
+       margin-top: -100px;
+    }
+    #open-menu:checked + ul li{
+        display: block;
+        font-size: 30px;
+        margin: 15px 0;
+    }
+    .aboutus{
+        margin-top: -45%;
+        margin-left: 35%;
+    }
+    .text-grid{
+        display: flex;
+        flex-direction: column;
+    }
+    .text{
+        margin-left: 10px;
+    }
+    .lorem-p{
+        margin-top: -90px;
+        margin-left: 10px;
+    }
+    .company-name{
+        display: flex;
+        flex-direction: column;
+        margin-left: 23%;
+    }
+    .foto{
+        display: flex;
+        flex-direction: column;
+        margin-left: 50px;
+        margin-top: -20px;
+        width: 80%;
+    }
+    .foto img{
+        margin-bottom: 20px;
+    }
+    footer{
+        margin-top: 300px;
+        height: 550px;
+        background-color: #111;
+        color: whitesmoke;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3,1fr);
+        grid-template-areas: 
+        "location"
+        " connect"
+        " contact";
+        text-align: center;
+    }
+
 }
