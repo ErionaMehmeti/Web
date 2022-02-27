@@ -130,7 +130,7 @@ $all=$dhenat->lexoDhenat();
             <h1>Welcome <span></span></h1>
    
              <p>Lista e te dhenave:</p>
-             <button class="btn1"><a href="">Add Products </a> </button>
+             <button class="btn1"><a href="ProductDashboard.php">Add Products </a> </button>
              <table>
                 <thead>
                 <tr>

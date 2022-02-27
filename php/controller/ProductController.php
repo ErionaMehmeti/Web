@@ -15,7 +15,7 @@ class ProductController{
     }
 
     public function insert($request){
-        $request['image']='../img/' .$request['image'];
+        $request['image']='../../img/' .$request['image'];
         $query = $this ->db->pdo->prepare('INSERT into product (product_image,product_name,product_pershkrim,product_price)
          VALUES (:product_image,:product_name,:product_pershkrim,:product_price)');
 
@@ -41,7 +41,7 @@ class ProductController{
     }
 
     public function update($request, $id){
-        $request['image']='../img/' .$request['image'];
+        $request['image']='../../img/' .$request['image'];
         $query = $this->db->pdo->prepare('UPDATE product  SET product_image = :product_image, product_name = :product_name, product_pershkrim = :product_pershkrim,product_price=:product_price WHERE id = :id');
 
         $query ->bindParam(':product_image',$request['image']);

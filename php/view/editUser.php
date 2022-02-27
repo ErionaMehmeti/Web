@@ -24,7 +24,7 @@
 <!DOCTYPE html>
 <htm>
     <head>
-        <link rel="stylesheet" href ="../Style/login.css" />
+        <link rel="stylesheet" href ="../../Style/login.css" />
         <title>Formulari i Regjistrimit</title>
     </head>
     <body>

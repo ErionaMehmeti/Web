@@ -1,6 +1,6 @@
 
 <?php
-$db=mysqli_connect('localhost','root','','user_db');
+$db=mysqli_connect('localhost','root','','ohs_db');
 session_start();
 $username = "";
 $email    = "";
@@ -44,10 +44,10 @@ if (isset($_POST['reg_user'])) {
         $_SESSION['success'] = "You are now logged in";
     }
     if ($select1=='user') {
-        header('location: login.php');
+        header('location: ../pages/login.php');
       }
       else if($select1=='admin'){
-        header('location: login.php');
+        header('location: ../pages/login.php');
       }
       else {
         echo '<script>alert("You have to select ")</script>';
@@ -69,10 +69,10 @@ if (isset($_POST['reg_user'])) {
       }
   
       if ($select=='user') {
-        header('location: userPage.php');
+        header('location:  ../pages/home.php');
       }
       else if($select=='admin'){
-        header('location: adminPage.php');
+        header('location: ../view/adminPage.php');
       }
       else {
     

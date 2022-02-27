@@ -3,7 +3,7 @@
     class dbConnect{
         private $conn =null;
         private $host = 'localhost';
-        private $dbname = 'user_db';
+        private $dbname = 'ohs_db';
         private $username = 'root';
         private $password = '';
     

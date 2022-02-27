@@ -14,8 +14,15 @@
     
     <title>Product</title>
     <link rel="stylesheet" href="../../Style/product.css">
-    <link rel="stylesheet" href="product.css">
-    <?php include_once("header.php")?>
+   <link rel="stylesheet" href="../../Style/productphp.css">
+   
+    <?php include_once("../view/header.php") ?>
+
+    <style>
+        .line{
+            margin-left:45%;
+        }
+    </style>
 </head>
 <body>
 <div class="line1"></div>

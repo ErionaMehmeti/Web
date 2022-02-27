@@ -1,6 +1,6 @@
 <?php
 
-        $conn = mysqli_connect("localhost", "root", "", "contact");
+        $conn = mysqli_connect("localhost", "root", "", "ohs_db");
         if($conn === false){
             die("ERROR: Could not connect. " 
                 . mysqli_connect_error());
@@ -17,7 +17,7 @@
             '$email','$mesazhi')";
           
         if(mysqli_query($conn, $sql)){
-            header("Location:  contact.php?mesazhi=send");
+            header("Location: ../pages/contact.php?mesazhi=send");
         } else{
             echo "ERROR: Hush! Sorry $sql. " 
                 . mysqli_error($conn);
